@@ -2,9 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return "AI Face Recognition Attendance System - Project Initialized"
+    return {
+        "project": "AI Face Recognition Attendance System",
+        "status": "Project Initialized",
+        "module": "Face Detection Prototype"
+    }
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
