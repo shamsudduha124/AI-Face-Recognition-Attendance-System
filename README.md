@@ -65,15 +65,29 @@ AI-Face-Recognition-Attendance-System/
 
 Development Roadmap
 
-* Set up project structure
-* Capture and store face datasets
-* Implement face detection
-* Implement face recognition
-* Build attendance logging module
-* Create analytics dashboard
-* Deploy web interface
+## Development Roadmap
 
-Why This Project
+### Phase 1 - Foundation
+- [x] Initialize project structure
+- [x] Configure Python dependencies
+- [x] Implement OpenCV face detection module
+- [x] Create attendance logging module
+
+### Phase 2 - Recognition
+- [ ] Face dataset collection
+- [ ] Face encoding generation
+- [ ] Identity matching
+
+### Phase 3 - Attendance System
+- [ ] Automatic attendance recording
+- [ ] Duplicate attendance prevention
+- [ ] CSV/Database integration
+
+### Phase 4 - Dashboard
+- [ ] Web interface with Flask
+- [ ] Attendance analytics
+- [ ] User management
+- [ ] Deployment
 
 This repository is part of my AI and computer vision portfolio as I continue building practical machine learning systems focused on real-world automation, education technology, and intelligent software solutions.
 
