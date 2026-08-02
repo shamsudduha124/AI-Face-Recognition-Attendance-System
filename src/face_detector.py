@@ -8,5 +8,18 @@ class FaceDetector:
 
     def detect_faces(self, image):
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        faces = self.detector.detectMultiScale(gray, 1.3, 5)
+        faces = self.detector.detectMultiScale(
+            gray,
+            scaleFactor=1.1,
+            minNeighbors=5,
+            minSize=(30, 30)
+        )
         return faces
+
+    def draw_faces(self, image):
+        faces = self.detect_faces(image)
+
+        for (x, y, w, h) in faces:
+            cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
+        return image, faces
