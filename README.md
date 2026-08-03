@@ -63,6 +63,15 @@ AI-Face-Recognition-Attendance-System/
 ├── requirements.txt
 └── README.md
 
+## Demo Preview
+
+### Input Image
+
+![Input](imgs/input/sample_face.jpg)
+
+### Face Detection Output
+
+![Output](imgs/output/detected_face.jpg)
 Development Roadmap
 
 ## Development Roadmap
